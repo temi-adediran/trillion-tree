@@ -10,6 +10,20 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require theme/bootstrap
+ *= require main
+ *= require theme/dark
+ *= require theme/swiper
+ *= require crowdfunding
+ *= require theme/fonts
+ *= require theme/animate
+ *= require theme/magnific-popup
+ *= require theme/settings
+ *= require theme/layers
+ *= require theme/navigation
  */
+
+
+@import "font-awesome";
+
