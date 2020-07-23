@@ -11,17 +11,19 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
- *= require theme/bootstrap
- *= require main
+ *= require bootstrap
+
  *= require theme/dark
  *= require theme/swiper
- *= require crowdfunding
  *= require theme/fonts
  *= require theme/animate
  *= require theme/magnific-popup
  *= require theme/settings
  *= require theme/layers
  *= require theme/navigation
+ *= require main
+ *= require crowdfunding
+ *= require theme/custom
  */
 
 

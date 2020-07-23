@@ -5,4 +5,31 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
+.button.button-border:not(.button-fill):hover {
+  background-color: var(--themecolor, #209EBB);
+  text-shadow: none;
+}
 
+.button {
+  background-color: #209EBB;
+}
+
+.menu-item:hover > .menu-link, .menu-item.current > .menu-link {
+  color: #209EBB;
+}
+
+.menu-link {
+  display: block;
+  line-height: 22px;
+  padding: 14px 15px;
+  color: #444;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none !important;
+  color: #209EBB;
+}

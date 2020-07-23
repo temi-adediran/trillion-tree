@@ -17,6 +17,7 @@
 -----------------------------------------------------------------*/
 .header-size-custom #logo img {
 	height: 70px;
+	padding: 5px 0;
 }
 
 @media (min-width: 992px) {
