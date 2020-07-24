@@ -1,16 +1,42 @@
-<div id="clearance" class="password-reset">
-  <h2><%= t(".title") %></h2>
+<section id="content">
+  <div class="content-wrap">
+    <div class="container clearfix">
 
-  <p><%= t(".description") %></p>
+      <div class="tabs mx-auto mb-0 clearfix" id="tab-login-register" style="max-width: 500px;">
 
-  <%= form_for :password, url: passwords_path do |form| %>
-    <div class="text-field">
-      <%= form.label :email %>
-      <%= form.text_field :email, type: 'email' %>
+        <div class="tab-container">
+
+          <div class="tab-content" id="tab-login">
+            <div class="card mb-0">
+              <div class="card-body" style="padding: 40px;">
+                <%= form_for :password, url: passwords_path, class: "mb-0" do |form| %>
+
+                  <h3><%= t(".title") %></h3>
+                  <p><%= t(".description") %></p>
+
+                  <div class="row">
+                    <div class="text-field col-12 form-group">
+                      <%= form.label :email %>
+                      <%= form.text_field :email, type: 'email', class:"form-control" %>
+                    </div>
+
+                    <div class="submit-field col-12 form-group">
+                      <%= form.submit class: "button button-3d button-black m-0" %>
+                    </div>
+                  </div>
+                <% end %>
+
+                <div class="accordion-header">
+                  <div class="accordion-title">
+                    Don't have an account? <%= link_to "Sign up", sign_up_path %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="submit-field">
-      <%= form.submit %>
-    </div>
-  <% end %>
-</div>
