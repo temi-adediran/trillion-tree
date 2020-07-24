@@ -1,6 +1,44 @@
-<div id="clearance" class="sign-in">
-  <h2><%= t(".title") %></h2>
+<section id="content">
+  <div class="content-wrap">
+    <div class="container clearfix">
+      <div class="tabs mx-auto mb-0 clearfix" id="tab-login-register" style="max-width: 500px;">
+        <div class="tab-container">
+          <div class="tab-content" id="tab-login">
+            <div class="card mb-0">
+              <div class="card-body" style="padding: 40px;">
+                <%= form_for :session, url: session_path do |form| %>
+                  <h3>Login to your Account</h3>
 
-  <%= render partial: '/sessions/form' %>
+                  <div class="row">
+                    <div class="text-field col-12 form-group">
+                      <%= form.label :email %>
+                      <%= form.email_field :email, type: 'email', class: "form-control" %>
+                    </div>
 
-</div>
+                    <div class="password-field col-12 form-group">
+                      <label for="login-form-password">Password:</label>
+                      <%= form.label :password %>
+                      <%= form.password_field :password, class: "form-control" %>
+                    </div>
+
+                    <div class="submit-field col-12 form-group">
+                      <%= form.submit "Login", class: "button button-3d button-black m-0" %>
+                      <%= link_to t(".forgot_password"), new_password_path, class: "float-right" %>
+                    </div>
+                  </div>
+                <% end %>
+
+                <div class="accordion-header">
+                  <div class="accordion-title">
+                    Don't have an account? <%= link_to "Sign up", sign_up_path %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
