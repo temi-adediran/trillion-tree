@@ -3544,7 +3544,7 @@ input[type="button"].btn-block {
 
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group {
-	width: 100%;
+	width: 10% !important;
 }
 
 .btn-group-vertical > .btn:not(:first-child),
@@ -3566,7 +3566,7 @@ input[type="button"].btn-block {
 
 .btn-group-toggle > .btn,
 .btn-group-toggle > .btn-group > .btn {
-	margin-bottom: 0;
+	margin-bottom: 10px !important;
 }
 
 .btn-group-toggle > .btn input[type="radio"],

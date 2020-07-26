@@ -1969,8 +1969,8 @@ body #side-panel.dark {
 .dark a.list-group-item.active:hover,
 .dark a.list-group-item.active:focus {
 	color: #ffffff;
-	background-color: #428bca;
-	border-color: #428bca;
+	background-color: #1ABC9C;
+	border-color: #1ABC9C;
 }
 
 .dark .list-group-item-success {

@@ -1,11 +1,12 @@
-<!-- Content
-============================================= -->
+<section id="slider" class="slider-element min-vh-100 dark">
+  <div class="slider-inner" style="background-image: url('assets/teamtrees.png');background-position: 50% 0;">
+  </div>
+</section>
+
 <section id="content">
-
   <div class="content-wrap">
-
     <div class="container clearfix">
-
+      <h3 class="center">Donate Now to Protect Nature</h3>
       <div class="card border-0 shadow-lg rounded-lg" style="background-color: #062639;">
         <div class="card-body dark" style="padding: 60px">
           <div class="form-widget" data-alert-type="inline">
@@ -16,92 +17,47 @@
 
               <div class="col-12 bottommargin">
                 <div id="tab-reservation" class="list-group list-group-horizontal d-flex justify-content-center" role="tablist">
-                  <a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3 active" data-toggle="list" href="#tab-reservation-select-dates" role="tab">1. Select Dates</a>
-                  <a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-toggle="list" href="#tab-reservation-select-room" role="tab">2. Select Room</a>
-                  <a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-toggle="list" href="#tab-reservation-contact" role="tab">3. Contact Details</a>
-                  <a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-toggle="list" href="#tab-reservation-payment" role="tab">4. Make Payment</a>
+                  <a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3 active" data-toggle="list" href="#tab-reservation-select-room" role="tab">1. Donation Amount</a>
+                  <a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-toggle="list" href="#tab-reservation-contact" role="tab">2. Personal Information</a>
+                  <a class="list-group-item list-group-item-action w-auto mx-0 mx-sm-3" data-toggle="list" href="#tab-reservation-payment" role="tab">3. Make Donation</a>
                 </div>
               </div>
 
               <div class="col-lg-9 mt-4 mt-lg-0">
                 <div class="tab-content" id="nav-tabContent">
 
-                  <div class="tab-pane fade show active" id="tab-reservation-select-dates" role="tabpanel" aria-labelledby="tab-reservation-select-dates">
-                    <div class="row">
-                      <div class="input-daterange travel-date-group col-12 bottommargin-sm">
-                        <div class="row">
-                          <div class="col-md-6 col-6">
-                            <label for="booking-registration-check-in">Check In:</label>
-                            <input type="text" value="" class="sm-form-control required border-form-control text-left" id="booking-registration-check-in" name="booking-registration-check-in" placeholder="DD/MM/YYYY">
-                          </div>
-                          <div class="col-md-6 col-6">
-                            <label for="booking-registration-check-out">Check Out:</label>
-                            <input type="text" value="" class="sm-form-control required border-form-control text-left" id="booking-registration-check-out" name="booking-registration-check-out" placeholder="DD/MM/YYYY">
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-6">
-                        <div class="mb-4">
-                          <label>Select Rooms:</label>
-                          <select class="sm-form-control border-form-control required" name="booking-registration-rooms" id="booking-registration-rooms">
-                            <option value="1 Room" selected="selected">1 Room</option>
-                            <option value="2 Rooms">2 Rooms</option>
-                            <option value="3 Rooms">3 Rooms</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="col-6">
-                        <div class="mb-4">
-                          <label>Select Persons:</label>
-                          <select class="sm-form-control border-form-control required" name="booking-registration-persons" id="booking-registration-persons">
-                            <option value="1 Person" selected="selected">1 Person</option>
-                            <option value="2 Persons">2 Persons</option>
-                            <option value="3 Persons">3 Persons</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <a href="#" class="button button-rounded button-light bg-white tab-action-btn-next text-dark float-right">Select Room</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tab-pane fade" id="tab-reservation-select-room" role="tabpanel" aria-labelledby="tab-reservation-select-room">
+                  <div class="tab-pane fade show active" id="tab-reservation-select-room" role="tabpanel" aria-labelledby="tab-reservation-select-room">
                     <div class="row">
                       <div class="col-12">
                         <div class="list-group btn-group-vertical btn-group-toggle mb-3" data-toggle="buttons">
                           <label class="btn list-group-item active d-flex justify-content-between align-items-center lh-condensed">
-                            <span class="d-block">
-                              <input type="radio" name="booking-registration-room-type" data-item="Standard" id="booking-registration-room-standard" checked value="Standard Room">
-                              <h4 class="my-0">Standard Room</h4>
-                              <small class="text-muted">Garden View</small>
-                            </span>
-                            <h4 class="mb-0 fcolor">$21</h4>
+                            <h4 class="mb-0 fcolor">$10</h4>
                           </label>
                           <label class="btn list-group-item d-flex justify-content-between align-items-center lh-condensed">
-                            <span class="d-block">
-                              <input type="radio" name="booking-registration-room-type" data-item="Deluxe" id="booking-registration-room-deluxe" value="Deluxe Room">
-                              <h4 class="my-0">Deluxe Room</h4>
-                              <small class="text-muted">City View</small>
-                              <small class="text-muted">With Breakfast</small>
-                            </span>
-                            <h4 class="mb-0 fcolor">$29</h4>
+                            <h4 class="mb-0 fcolor">$20</h4>
                           </label>
                           <label class="btn list-group-item d-flex justify-content-between align-items-center lh-condensed">
-                            <span class="d-block">
-                              <input type="radio" name="booking-registration-room-type" data-item="Super Deluxe" id="booking-registration-room-super-deluxe" value="Super Deluxe Room">
-                              <h4 class="my-0">Super Deluxe Room</h4>
-                              <small class="text-muted">Sea View</small>
-                              <small class="text-muted">With Breakfast</small>
-                            </span>
-                            <h4 class="mb-0 fcolor">$35</h4>
+                            <h4 class="mb-0 fcolor">$50</h4>
+                          </label>
+                          <label class="btn list-group-item d-flex justify-content-between align-items-center lh-condensed">
+                            <h4 class="mb-0 fcolor">$100</h4>
+                          </label>
+                          <label class="btn list-group-item d-flex justify-content-between align-items-center lh-condensed">
+                            <h4 class="mb-0 fcolor">$200</h4>
+                          </label>
+                          <label class="btn list-group-item d-flex justify-content-between align-items-center lh-condensed">
+                            <h4 class="mb-0 fcolor">$500</h4>
+                          </label>
+                          <label class="btn list-group-item d-flex justify-content-between align-items-center lh-condensed">
+                            <h4 class="mb-0 fcolor">$1000</h4>
+                          </label>
+                          <label class="btn list-group-item d-flex justify-content-between align-items-center lh-condensed">
+                            <h4 class="mb-0 fcolor">Other</h4>
                           </label>
                         </div>
                       </div>
                       <div class="col-12">
-                        <a href="#" class="button button-rounded button-light bg-white tab-action-btn-next text-dark float-right">Select Details</a>
+                        <a href="#" class="button button-rounded button-light bg-white tab-action-btn-next text-dark float-right">Select Amount</a>
                       </div>
                     </div>
                   </div>
@@ -190,9 +146,6 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
-
-</section><!-- #content end -->
+</section>
