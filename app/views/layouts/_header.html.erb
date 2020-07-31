@@ -18,13 +18,13 @@
 
         <nav class="primary-menu">
           <ul class="menu-container">
-            <li class="menu-item"><%= link_to "About Us", root_path, class: "menu-link" %></li>
+            <li class='<%= "current" if current_page?(root_path) %> menu-item'><%= link_to "About Us", root_path, class: "menu-link" %></li>
             <% if signed_in? %>
               <li class="menu-item"><span class="menu-link">Signed in as: <%= current_user.first_name %></span></li>
-              <li class="menu-item"><%= link_to 'Sign out', sign_out_path, method: :delete, class: "menu-link" %></li>
+              <li class='<%= "current" if current_page?(sign_out_path) %> menu-item'><%= link_to 'Sign out', sign_out_path, method: :delete, class: "menu-link" %></li>
             <% else %>
-              <li class="current menu-item"><%= link_to "Join Us", sign_up_path, class: "menu-link" %></li>
-              <li class="menu-item"><%= link_to "Login", sign_in_path, class: "menu-link" %></li>
+              <li class='<%= "current" if current_page?(sign_up_path) %> menu-item' ><%= link_to "Join Us", sign_up_path, class: "menu-link" %></li>
+              <li class='<%= "current" if current_page?(sign_in_path) %> menu-item'><%= link_to "Login", sign_in_path, class: "menu-link" %></li>
             <% end %>
           </ul>
         </nav>
