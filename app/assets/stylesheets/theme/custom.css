@@ -33,3 +33,17 @@ a {
   text-decoration: none !important;
   color: #209EBB;
 }
+
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group {
+  width: 80%;
+}
+
+.btn-group-vertical {
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.btn:focus, .btn.focus {
+  box-shadow: 0 0 0 0.2rem rgb(3 255 204 / 20%);
+}
